@@ -54,7 +54,7 @@ dependencies (Burp provides the Montoya API at runtime).
 Using Gradle:
 
     gradle jar
-    # output: build/libs/aes-crypto.jar
+    # output: build/libs/aes-crypto-1.0.0.jar
 
 ## Install
 

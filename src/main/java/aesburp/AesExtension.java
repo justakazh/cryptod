@@ -7,6 +7,8 @@ import burp.api.montoya.ui.hotkey.HotKeyContext;
 
 public class AesExtension implements BurpExtension {
 
+    public static final String VERSION = "1.0.0";
+
     @Override
     public void initialize(MontoyaApi api) {
         api.extension().setName("Cryptod - AES encrypt/decrypt");
@@ -30,9 +32,9 @@ public class AesExtension implements BurpExtension {
         api.extension().registerUnloadingHandler(
                 () -> api.logging().logToOutput("Cryptod unloaded."));
 
-        api.logging().logToOutput("Cryptod loaded (by Justakazh - https://github.com/justakazh). "
-                + "Configure it in the 'Cryptod' tab, then select a ciphertext and use the "
-                + "right-click menu or the Cryptod hotkeys.");
+        api.logging().logToOutput("Cryptod v" + VERSION + " loaded (by Justakazh - "
+                + "https://github.com/justakazh). Configure it in the 'Cryptod' tab, then select "
+                + "a ciphertext and use the right-click menu or the Cryptod hotkeys.");
     }
 
     /**

@@ -154,7 +154,7 @@ public class SettingsTab {
         title.setFont(title.getFont().deriveFont(Font.BOLD, 24f));
         title.setForeground(ACCENT);
 
-        JLabel subtitle = dim(new JLabel("AES encrypt / decrypt for Burp Suite"));
+        JLabel subtitle = dim(new JLabel("AES encrypt / decrypt for Burp Suite  -  v" + AesExtension.VERSION));
 
         JLabel author = new JLabel("by Justakazh");
         author.setFont(author.getFont().deriveFont(Font.BOLD));

@@ -6,8 +6,9 @@ out/
 # Locally downloaded Montoya jar (Gradle resolves it from Maven Central)
 lib/
 
-# Manually built jar (submission builds from source via Gradle)
-/aes-crypto.jar
+# Stray top-level jars (Gradle output goes to build/libs/); wrapper jar under
+# gradle/wrapper/ is NOT matched by this anchored pattern and stays committed.
+/*.jar
 
 # IDE
 .idea/

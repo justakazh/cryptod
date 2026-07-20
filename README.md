@@ -51,10 +51,10 @@ Requires JDK 17+ and Burp with the Montoya hotkey API (2025 or later). The
 extension is built against Montoya API 2026.4 and bundles no third-party
 dependencies (Burp provides the Montoya API at runtime).
 
-Using Gradle:
+Using the Gradle wrapper (no local Gradle install required):
 
-    gradle jar
-    # output: build/libs/aes-crypto-1.0.0.jar
+    ./gradlew jar
+    # output: build/libs/cryptod-1.0.0.jar
 
 ## Install
 

@@ -9,16 +9,15 @@ repositories {
 }
 
 dependencies {
-    // Burp provides Montoya at runtime, so we only need it to compile.
+    // Burp provides the Montoya API at runtime, so it is compile-only.
     compileOnly 'net.portswigger.burp.extensions:montoya-api:2026.4'
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
+// Compile against the Java 17 API using whatever JDK (17+) runs the build.
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
 }
 
 jar {
-    archiveBaseName = 'aes-crypto'
+    archiveBaseName = 'cryptod'
 }

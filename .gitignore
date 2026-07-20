@@ -1,0 +1,16 @@
+# Build output
+build/
+out/
+*.class
+
+# Locally downloaded Montoya jar (Gradle resolves it from Maven Central)
+lib/
+
+# Manually built jar (submission builds from source via Gradle)
+/aes-crypto.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.gradle/
